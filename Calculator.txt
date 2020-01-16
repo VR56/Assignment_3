@@ -1,0 +1,24 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter the Two Numbers");
+		string s,a,b;
+		Console.WriteLine("Enter the First Number : ");
+		a=Console.ReadLine();
+		Console.WriteLine("Enter the Second Number : ");
+		b=Console.ReadLine();
+		Console.WriteLine("Enter the sign: ");
+		s=Console.ReadLine();
+		if(s == "+")
+			Console.WriteLine("The Sum is: "+(Convert.ToInt32(a)+Convert.ToInt32(b)));
+		else if(s == "-")
+			Console.WriteLine("The Difference is: "+(Convert.ToInt32(a)-Convert.ToInt32(b)));
+		else if(s == "*")
+			Console.WriteLine("The Product is: "+(Convert.ToInt32(a)*Convert.ToInt32(b)));
+		else if(s == "/")
+			Console.WriteLine("The Quotient is: "+(Convert.ToInt32(a)/Convert.ToInt32(b)));
+	}
+}
